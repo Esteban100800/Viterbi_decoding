@@ -28,9 +28,9 @@ def cm_branch_metric(branch_idx, r1, r2):
 # Figure trellis example — received pairs (r1, r2) for each t=1..9
 # t:  1        2       3        4         5       6       7       8       9
 #rcv = [-1,+0.1, -1,+1, -1,+0.1, -0.2,+1, -1,-1, +1,-1, +1,-1, -1,-1, +1,+1]
-rcv = [+1,+1, +0.6,-1, 1,-1, -1,0.1, +1,-1, -1,-1, 0.3,-1, -1,+1, -1,-1]
+#rcv = [+1,+1, +0.6,-1, 1,-1, -1,0.1, +1,-1, -1,-1, 0.3,-1, -1,+1, -1,-1]
 
-#rcv= [-1, -1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1]
+rcv= [-1, -1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1]
 r1_array = rcv[0::2]   # even-indexed: first of each pair
 r2_array = rcv[1::2]   # odd-indexed:  second of each pair
 n = len(r1_array)
